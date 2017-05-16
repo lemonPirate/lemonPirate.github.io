@@ -20,11 +20,9 @@ sudo add-apt-repository ppa:fcitx-team/nightly
 sudo: add-apt-repository:command not found
 ~~~~~
 原来是因为add-apt-repository依赖于python-software-properties和software-properties-common，再执行以下命令即可：
-<!--~~~~~-->
-{% highlight shell %}
+```
 sudo apt-get install python-software-properties
 sudo apt-get software-properties-common
-{% endhighlight %}
-<!--~~~~~-->
+```
 3. 安装fcitx及相关软件包
 4. 重启操作系统，即可使用fcitx
